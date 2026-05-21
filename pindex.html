@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <!-- Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Background -->
+    <canvas id="particles"></canvas>
+    <div class="grid-bg"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <a href="#home" class="nav-brand">Emon<span>.Dev</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-toggle" id="navToggle">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home">
+      <div class="hero-content">
+        <div class="hero-badge">Available for Opportunities</div>
+        <h1 class="hero-name">
+          Md. Emon Hossain
+          <span>Developer & Educator</span>
+        </h1>
+        <p class="hero-title">
+          <span id="typingText" class="typing-text"></span>
+        </p>
+        <p class="hero-desc">
+          "With over 8.5 months of intensive training at
+          <strong style="color: var(--text)">
+            IDB-BISEW ASP.NET Core (React & Angular)</strong
+          >, <strong style="color: var(--text)">C# .NET</strong>. My mission is
+          to build robust software solutions and contribute to the growing
+          developer ecosystem in Bangladesh.
+        </p>
+        <div class="hero-actions">
+          <a
+            href="https://github.com/emonhossainbelkuchi"
+            target="_blank"
+            class="btn-primary-glow"
+          >
+            <i class="fas fa-download"></i> Download CV
+          </a>
+          <a href="#contact" class="btn-outline-glow">
+            <i class="fas fa-paper-plane"></i> Get in Touch
+          </a>
+          <a
+            href="https://github.com/emonhossainbelkuchi"
+            target="_blank"
+            class="btn-outline-glow"
+          >
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>scroll</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </section>
+    <div class="section-divider"></div>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container section-wrap">
+        <div class="section-header reveal">
+          <div class="section-tag">01 — About</div>
+          <h2 class="section-title">Who I Am</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              With <strong>1+ years of teaching experience</strong> and growing
+              expertise in software development, I bridge the gap between
+              academic learning and real-world industry needs.
+            </p>
+            <p>
+              I am currently mastering
+              <strong>ASP.NET Core, C#, Blazor, MAUI, React</strong> and modern
+              development practices. I believe in learning by building,
+              mentoring by doing.
+            </p>
+          </div>
+          <ul class="info-list reveal">
+            <li>
+              <i class="fas fa-cake-candles"></i><span>Birthday:</span> 13 March
+              2001
+            </li>
+            <li>
+              <i class="fas fa-flag"></i><span>Nationality:</span> Bangladeshi
+            </li>
+            <li>
+              <i class="fas fa-location-dot"></i><span>Location:</span> North
+              Hall, Dhaka College, Dhaka
+            </li>
+            <li>
+              <i class="fas fa-tint"></i><span>Blood Group:</span> B+ (ve)
+            </li>
+            <li>
+              <i class="fas fa-user"></i><span>Father:</span> Md. Easin Ali
+              Akondo
+            </li>
+            <li><i class="fas fa-user"></i><span>Mother:</span> Awlia Begum</li>
+            <li>
+              <i class="fas fa-phone"></i><span>Phone:</span> +880 1519605217
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i
+              ><span>Email:</span> emonhossainbelkuchi@gmail.com
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="section-divider"></div>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="container section-wrap">
+        <div class="section-header reveal">
+          <div class="section-tag">02 — Skills</div>
+          <h2 class="section-title">Technical Expertise</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <h4>Development & Frameworks</h4>
+            <div class="skill-item">
+              <div class="skill-top">
+                <span class="skill-name">ASP.NET Core / MVC</span>
+                <span class="skill-pct">95%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-w="95"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-top">
+                <span class="skill-name">C# .NET</span
+                ><span class="skill-pct">96%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-w="93"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-top">
+                <span class="skill-name"
+                  >HTML / CSS / Bootstrap /JavaScript/NodeJs/ jQuery /</span
+                ><span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-w="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-top">
+                <span class="skill-name">Blazor & MAUI (Learning)</span
+                ><span class="skill-pct">0%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-w="0"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-top">
+                <span class="skill-name">React / Angular (Learning)</span
+                ><span class="skill-pct">0%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-w="0"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h4>Databases & Tools</h4>
+            <div class="skill-item">
+              <div class="skill-top">
+                <span class="skill-name">MS SQL Server 2019</span
+                ><span class="skill-pct">92%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-w="92"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-top">
+                <span class="skill-name">Web APIs</span
+                ><span class="skill-pct">20%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-w="20"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-top">
+                <span class="skill-name">Git & CI/CD</span
+                ><span class="skill-pct">0%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-w="0"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-top">
+                <span class="skill-name">Azure (Learning)</span
+                ><span class="skill-pct">0%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-w="0"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-top">
+                <span class="skill-name">Python / Power BI</span
+                ><span class="skill-pct">0%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-fill" data-w="0"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="container section-wrap">
+        <div class="section-header reveal">
+          <div class="section-tag">03 — Experience</div>
+          <h2 class="section-title">Professional Journey</h2>
+        </div>
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <div class="tl-header">
+              <div>
+                <div class="tl-title">Future Senior Software Engineer</div>
+                <div class="tl-company">EmonGroup of IT</div>
+              </div>
+              <div style="text-align: right">
+                <span class="badge badge-green">Current</span>
+                <div class="tl-date">Nov 2025 – Present</div>
+              </div>
+            </div>
+            <div class="tl-desc">
+              Learning and applying ASP.NET Core in a real team environment.
+              Contributing to enterprise web application development.
+            </div>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-header">
+              <div>
+                <div class="tl-title">Software Developer</div>
+                <div class="tl-company">Daffodil software Limited</div>
+              </div>
+              <div style="text-align: right">
+                <div class="tl-date">Nov 2025 – Nov 2026</div>
+              </div>
+            </div>
+            <div class="tl-desc">
+              ASP.NET CORE , MVC development, full-cycle feature implementation
+              and bug resolution.
+            </div>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-header">
+              <div>
+                <div class="tl-title">Software Engineer</div>
+                <div class="tl-company">KHAIKHAI.com</div>
+              </div>
+              <div style="text-align: right">
+                <div class="tl-date">Sep 2027 – Nov 2028</div>
+              </div>
+            </div>
+            <div class="tl-desc">
+              ASP.NET CORE, MVC and Web API development for e-commerce platform
+              features.
+            </div>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-header">
+              <div>
+                <div class="tl-title">Faculty, C# .NET</div>
+                <div class="tl-company">US Software Ltd (IsDB-BISEW)</div>
+              </div>
+              <div style="text-align: right">
+                <span class="badge badge-blue">Future</span>
+                <div class="tl-date">Jan 2030 – Future</div>
+              </div>
+            </div>
+            <div class="tl-desc">
+              Training scholarship students in .NET, curriculum design, exam
+              preparation, and job-oriented mentoring.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="section-divider"></div>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="container section-wrap">
+        <div class="section-header reveal">
+          <div class="section-tag">04 — Projects</div>
+          <h2 class="section-title">Notable Work</h2>
+        </div>
+        <div class="projects-grid">
+          <div class="proj-card reveal">
+            <div
+              class="proj-banner"
+              style="background: linear-gradient(135deg, #0ea5e920, #8b5cf620)"
+            >
+              🚗
+            </div>
+            <div class="proj-body">
+              <div class="proj-title">
+                MSSQL Supply Chain Logistics Management
+              </div>
+              <div class="proj-tags">
+                <span class="tag">ASP.NET Core</span><span class="tag">C#</span
+                ><span class="tag">MS SQL Server 2019</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="proj-card reveal">
+            <div
+              class="proj-banner"
+              style="background: linear-gradient(135deg, #10b98120, #0ea5e920)"
+            >
+              🎓
+            </div>
+            <div class="proj-body">
+              <div class="proj-title">Student Management System</div>
+              <div class="proj-desc">
+                Web-based portal for managing scholarship students' progress,
+                attendance, and exam results.
+              </div>
+              <div class="proj-tags">
+                <span class="tag">ASP.NET CORE, MVC</span
+                ><span class="tag">Bootstrap,Javascript </span
+                ><span class="tag">SQL</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="proj-card reveal">
+            <div
+              class="proj-banner"
+              style="background: linear-gradient(135deg, #f59e0b20, #ef444420)"
+            >
+              🛒
+            </div>
+            <div class="proj-body">
+              <div class="proj-title">E-Commerce</div>
+              <div class="proj-desc">
+                RESTful API for Khaikhai.com e-commerce C# ,jQuery,NodeJs role
+                management and payment integration.
+              </div>
+              <div class="proj-tags">
+                <span class="tag">Web API </span
+                ><span class="tag"> Javascript </span
+                ><span class="tag"> C# </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="proj-card reveal">
+            <div
+              class="proj-banner"
+              style="background: linear-gradient(135deg, #8b5cf620, #ec489920)"
+            >
+              📊
+            </div>
+            <div class="proj-body">
+              <div class="proj-title">Hotel-Management-System</div>
+              <div class="proj-desc">C Sharp</div>
+              <div class="proj-tags">
+                <span class="tag"> SQL </span><span class="tag"> HTML </span
+                ><span class="tag"> C#</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <div class="container section-wrap">
+        <div class="section-header reveal">
+          <div class="section-tag">05 — Education</div>
+          <h2 class="section-title">Academic Qualifications</h2>
+        </div>
+        <div class="edu-grid">
+          <div class="edu-card reveal">
+            <div class="edu-year">2026</div>
+            <div>
+              <div class="edu-degree">Master's Degree</div>
+              <div class="edu-institute">Dhaka College, Dhaka</div>
+            </div>
+            <div class="edu-result">3.30/4</div>
+          </div>
+          <div class="edu-card reveal">
+            <div class="edu-year">2024</div>
+            <div>
+              <div class="edu-degree">Honour's Degree</div>
+              <div class="edu-institute">Dhaka College, Dhaka</div>
+            </div>
+            <div class="edu-result">2.90/4</div>
+          </div>
+          <div class="edu-card reveal">
+            <div class="edu-year">2019</div>
+            <div>
+              <div class="edu-degree">HSC (Higher Secondary)</div>
+              <div class="edu-institute">Govt. Akbar Ali College</div>
+            </div>
+            <div class="edu-result">4.95/5</div>
+          </div>
+          <div class="edu-card reveal">
+            <div class="edu-year">2017</div>
+            <div>
+              <div class="edu-degree">SSC (Secondary)</div>
+              <div class="edu-institute">Daulatpur ML High School</div>
+            </div>
+            <div class="edu-result">4.95/5</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications">
+      <div class="container section-wrap">
+        <div class="section-header reveal">
+          <div class="section-tag">06 — Certifications</div>
+          <h2 class="section-title">Training & Credentials</h2>
+        </div>
+        <div class="cert-grid">
+          <div class="cert-card reveal">
+            <div class="cert-icon">🏆</div>
+            <div class="cert-title">Programming in ASP.NET</div>
+            <div class="cert-org">IsDB-BISEW</div>
+          </div>
+
+          <div class="cert-card reveal">
+            <div class="cert-icon">💻</div>
+            <div class="cert-title">C# .NET Training (8.5 Months)</div>
+            <div class="cert-org">BITM</div>
+          </div>
+
+          <div class="cert-card reveal">
+            <div class="cert-icon">🏅</div>
+            <div class="cert-title">IT Fundamentals</div>
+            <div class="cert-org">Daffodil International Academy</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container section-wrap">
+        <div class="section-header reveal">
+          <div class="section-tag">07 — Contact</div>
+          <h2 class="section-title">Let's Connect</h2>
+        </div>
+        <div class="contact-grid">
+          <a
+            href="tel:+8801519605217"
+            class="contact-card reveal"
+            style="text-decoration: none; color: inherit"
+          >
+            <i class="fas fa-phone"></i>
+            <h6>Phone</h6>
+            <p>+880 1519605217</p>
+          </a>
+          <a
+            href="mailto:emonhossainbelkuchi@gmail.com"
+            class="contact-card reveal"
+            style="text-decoration: none; color: inherit"
+          >
+            <i class="fas fa-envelope"></i>
+            <h6>Email</h6>
+            <p>emonhossainbelkuchi@gmail.com</p>
+          </a>
+          <div class="contact-card reveal">
+            <i class="fas fa-location-dot"></i>
+            <h6>Location</h6>
+            <p>North Hall, Dhaka College, Dhaka</p>
+          </div>
+          <a
+            href="http://www.emonhossin.com"
+            target="_blank"
+            class="contact-card reveal"
+            style="text-decoration: none; color: inherit"
+          >
+            <i class="fas fa-globe"></i>
+            <h6>Website</h6>
+            <p>emonhossin.com</p>
+          </a>
+        </div>
+        <div class="social-row">
+          <a
+            href="https://github.com/emonhossainbelkuchi"
+            target="_blank"
+            class="social-btn"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="mailto:emonhossainbelkuchi@gmail.com" class="social-btn"
+            ><i class="fas fa-envelope"></i
+          ></a>
+          <a href="tel:+8801519605217" class="social-btn"
+            ><i class="fas fa-phone"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/emon-hossain-1292a237a/?skipRedirect=true"
+            target="_blank"
+            class="social-btn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2026 <span>Md. Emon Hossain</span>. All rights reserved.</p>
+      <p style="margin-top: 0.4rem; font-size: 0.78rem; color: #334155">
+        This is Developed by Batch-69 DIAC & ASP.NET Core Faculty IsDB-BISEW·
+        Dhaka, Bangladesh
+      </p>
+    </footer>
+    <script>
+      // ── CURSOR ──
+      const cursor = document.getElementById("cursor");
+      const ring = document.getElementById("cursorRing");
+      let mx = 0,
+        my = 0,
+        rx = 0,
+        ry = 0;
+      document.addEventListener("mousemove", (e) => {
+        mx = e.clientX;
+        my = e.clientY;
+        cursor.style.left = mx + "px";
+        cursor.style.top = my + "px";
+      });
+      function animateRing() {
+        rx += (mx - rx) * 0.12;
+        ry += (my - ry) * 0.12;
+        ring.style.left = rx + "px";
+        ring.style.top = ry + "px";
+        requestAnimationFrame(animateRing);
+      }
+      animateRing();
+
+      // ── PARTICLES ──
+      const canvas = document.getElementById("particles");
+      const ctx = canvas.getContext("2d");
+      let W,
+        H,
+        pts = [];
+      function resize() {
+        W = canvas.width = window.innerWidth;
+        H = canvas.height = window.innerHeight;
+      }
+      resize();
+      window.addEventListener("resize", resize);
+      for (let i = 0; i < 80; i++)
+        pts.push({
+          x: Math.random() * window.innerWidth,
+          y: Math.random() * window.innerHeight,
+          vx: (Math.random() - 0.5) * 0.3,
+          vy: (Math.random() - 0.5) * 0.3,
+          r: Math.random() * 1.5 + 0.5,
+          a: Math.random(),
+        });
+      function drawParticles() {
+        ctx.clearRect(0, 0, W, H);
+        pts.forEach((p) => {
+          p.x += p.vx;
+          p.y += p.vy;
+          if (p.x < 0 || p.x > W) p.vx *= -1;
+          if (p.y < 0 || p.y > H) p.vy *= -1;
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(0,212,255,${p.a * 0.4})`;
+          ctx.fill();
+        });
+        // connections
+        for (let i = 0; i < pts.length; i++) {
+          for (let j = i + 1; j < pts.length; j++) {
+            const dx = pts[i].x - pts[j].x,
+              dy = pts[i].y - pts[j].y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist < 120) {
+              ctx.beginPath();
+              ctx.moveTo(pts[i].x, pts[i].y);
+              ctx.lineTo(pts[j].x, pts[j].y);
+              ctx.strokeStyle = `rgba(0,212,255,${0.06 * (1 - dist / 120)})`;
+              ctx.lineWidth = 0.5;
+              ctx.stroke();
+            }
+          }
+        }
+        requestAnimationFrame(drawParticles);
+      }
+      drawParticles();
+
+      // ── TYPING ──
+      const phrases = [
+        ".NET Developer",
+        "C# Engineer",
+        "Educator & Mentor",
+        "ASP.NET Core Dev",
+        "Full-Stack Learner",
+      ];
+      let pi = 0,
+        ci = 0,
+        del = false;
+      const el = document.getElementById("typingText");
+      function type() {
+        const w = phrases[pi];
+        if (!del) {
+          el.textContent = w.slice(0, ++ci);
+          if (ci === w.length) {
+            del = true;
+            setTimeout(type, 1800);
+            return;
+          }
+        } else {
+          el.textContent = w.slice(0, --ci);
+          if (ci === 0) {
+            del = false;
+            pi = (pi + 1) % phrases.length;
+          }
+        }
+        setTimeout(type, del ? 60 : 100);
+      }
+      type();
+
+      // ── NAVBAR SCROLL ──
+      const nav = document.getElementById("navbar");
+      window.addEventListener("scroll", () => {
+        nav.classList.toggle("scrolled", window.scrollY > 60);
+      });
+
+      // ── NAV MOBILE ──
+      document.getElementById("navToggle").addEventListener("click", () => {
+        document.getElementById("navLinks").classList.toggle("open");
+      });
+
+      // ── REVEAL ON SCROLL ──
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("visible");
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
+      document
+        .querySelectorAll(".reveal")
+        .forEach((el) => observer.observe(el));
+
+      // ── SKILL BARS ──
+      const skillObs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.querySelectorAll(".skill-fill").forEach((bar) => {
+                bar.style.width = bar.dataset.w + "%";
+              });
+            }
+          });
+        },
+        { threshold: 0.3 },
+      );
+      document
+        .querySelectorAll(".skill-group")
+        .forEach((g) => skillObs.observe(g));
+
+      // ── COUNT UP ──
+      const countObs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.querySelectorAll("[data-count]").forEach((el) => {
+                const target = +el.dataset.count,
+                  dur = 1500;
+                let start = null;
+                function step(ts) {
+                  if (!start) start = ts;
+                  const prog = Math.min((ts - start) / dur, 1);
+                  el.textContent = Math.floor(prog * target);
+                  if (prog < 1) requestAnimationFrame(step);
+                  else
+                    el.textContent =
+                      target +
+                      (target === 4
+                        ? "+"
+                        : target === 500
+                          ? "+"
+                          : target === 8
+                            ? ""
+                            : target === 6
+                              ? "+"
+                              : "");
+                }
+                requestAnimationFrame(step);
+              });
+              countObs.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.5 },
+      );
+      const heroStats = document.querySelector(".hero-stats");
+      if (heroStats) countObs.observe(heroStats);
+    </script>
+
+    <script src="myScript.js"></script>
+  </body>
+</html>
